@@ -111,5 +111,17 @@ rivets.adapters[':'] = {
     Herry up! There is { auction.timeLeft | time } left.
   </aside>
 </section>
+
+<ul>
+  <li rv-each-user="app.users">
+    <span>User Index : { %user% }</span>
+  <ul>
+    <li rv-each-comment="user.comments">
+      <span>Comment Index : { %comment% }</span>
+      <span>User Index : { %user% }</span>
+    </li>
+  </ul>
+  </li>
+</ul>
 ```
 
